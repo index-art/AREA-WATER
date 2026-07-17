@@ -34,12 +34,12 @@ button {
     background: none;
     border: none;
     color: rgb(0, 0, 255);
-    font-size: clamp(1.2rem, 5vw, 2rem);
-    letter-spacing: clamp(0.15em, 1vw, 0.25em);
+    font-size: clamp(2rem, 8vw, 3rem);
+    letter-spacing: 0.3em;
     font-weight: 300;
     cursor: pointer;
     text-align: center;
-    padding: 20px;
+    padding: 30px;
     user-select: none;
     -webkit-tap-highlight-color: transparent;
 }
@@ -50,16 +50,16 @@ button:focus {
 
 #exitButton {
     position: fixed;
-    top: clamp(15px, 3vw, 30px);
-    right: clamp(20px, 4vw, 40px);
+    top: clamp(20px, 4vw, 35px);
+    right: clamp(25px, 5vw, 45px);
     color: rgb(0, 0, 255);
-    font-size: clamp(2rem, 7vw, 3rem);
+    font-size: clamp(3rem, 10vw, 4.5rem);
     font-family: Arial, sans-serif;
-    font-weight: 300;
+    font-weight: 200;
     cursor: pointer;
     display: none;
     z-index: 10;
-    line-height: 1;
+    line-height: 0.8;
     user-select: none;
     -webkit-tap-highlight-color: transparent;
 }
@@ -69,13 +69,16 @@ button:focus {
 }
 
 @media screen and (max-width: 600px) {
+
     button {
-        font-size: 1.4rem;
-        letter-spacing: 0.18em;
+        font-size: 2.2rem;
+        letter-spacing: 0.25em;
     }
 
     #exitButton {
         top: 20px;
         right: 25px;
+        font-size: 4rem;
     }
+
 }
