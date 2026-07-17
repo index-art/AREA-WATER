@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    touch-action: manipulation;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background: none;
+    border: none;
+    color: rgb(0, 0, 255);
+    font-size: clamp(1.2rem, 5vw, 2rem);
+    letter-spacing: clamp(0.15em, 1vw, 0.25em);
+    font-weight: 300;
+    cursor: pointer;
+    text-align: center;
+    padding: 20px;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+button:focus {
+    outline: none;
+}
+
+#exitButton {
+    position: fixed;
+    top: clamp(15px, 3vw, 30px);
+    right: clamp(20px, 4vw, 40px);
+    color: rgb(0, 0, 255);
+    font-size: clamp(2rem, 7vw, 3rem);
+    font-family: Arial, sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+    display: none;
+    z-index: 10;
+    line-height: 1;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+#exitButton:active {
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 600px) {
+    button {
+        font-size: 1.4rem;
+        letter-spacing: 0.18em;
+    }
+
+    #exitButton {
+        top: 20px;
+        right: 25px;
+    }
+}
