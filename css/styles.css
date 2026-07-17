@@ -53,9 +53,9 @@ button:focus {
     top: 20px;
     right: 25px;
     color: rgb(0, 0, 255);
-    font-size: 36px;
+    font-size: 50px;
     font-family: Arial, sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     cursor: pointer;
     display: none;
     z-index: 10;
