@@ -93,7 +93,7 @@ async function searchWater() {
     const lat = userPosition.lat;
     const lon = userPosition.lon;
 
-    const radius = 15;
+    const radius = 30;
 
     const url = new URL(
         "https://api.geoapify.com/v2/places"
